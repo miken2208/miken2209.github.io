@@ -1,0 +1,569 @@
+{
+	"info": {
+		"_postman_id": "bbd35d89-3920-4080-abde-0be25bdf1ab4",
+		"name": "HomeWork_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Name request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3da5c861-20e4-4a29-9628-d1f8f1c4b37a",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Lviv&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Lviv"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Coordinates request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f0cbecfb-e782-4107-9379-654f15431893",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?lat=49.84&lon=24.03&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "49.84"
+						},
+						{
+							"key": "lon",
+							"value": "24.03"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zip request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "212f3ed2-a713-4ea3-bee7-282fb1563bb4",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?zip=79000,ua&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": "79000,ua"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ID request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2f877530-0750-49d2-b997-60e7109157e3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?id=702550&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "702550"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By Nmae & temperature in Celsius",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "13f2d6ee-8db2-4be2-a4f7-3f67bb6eee41",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Lviv&units=metric&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Lviv"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By Nmae & temperature in Kelvin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d492a34-3fd3-4ecf-9c00-7c4daca5d485",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Lviv&units=imperial&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Lviv"
+						},
+						{
+							"key": "units",
+							"value": "imperial"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "By ID & group in Celsius",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "65c48fbf-0f98-44fd-b526-6eef985ec77e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.openweathermap.org/data/2.5/group?id=702550,2643743&units=metric&APPID=ff36a14b968b155493140afc613d8827",
+					"protocol": "http",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"group"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "702550,2643743"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Negative by Name",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7107ea73-67a2-4f1d-87e7-9fe52ea7eaab",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?q=Lvivv&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Lvivv"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Negative by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3364c08b-2f3b-4d26-bdb9-d6ca5d5b4e12",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?id=702550000&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "702550000"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Negative by Zip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bedb7ec4-eb53-4ef6-8b6f-4a28ac005f46",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?zip=79000111,ua&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "zip",
+							"value": "79000111,ua"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Negative by Coordinates",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "186efe2f-fae1-4bd1-8a8d-a642ddbb4845",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/weather?lat=49000.84&lon=24.03&APPID=ff36a14b968b155493140afc613d8827",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "49000.84"
+						},
+						{
+							"key": "lon",
+							"value": "24.03"
+						},
+						{
+							"key": "APPID",
+							"value": "ff36a14b968b155493140afc613d8827"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
